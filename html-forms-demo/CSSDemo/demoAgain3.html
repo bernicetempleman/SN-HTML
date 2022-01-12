@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+
+    /* Element selector
+   h1 { 
+       color:red;
+   } 
+   */
+
+   /* id selector*/
+   #myh1{
+       color: red;
+   }
+   /* class selector*/
+
+   .myclass{
+       color: blue;
+   }
+   /* Universal selector*/
+   *{
+       color: orange;
+   }
+   /*grouping selector*/
+   h2, h3{
+       color: green;
+   }
+   /* attribute selector*/
+   [title]{
+       color: yellowgreen;
+   }
+     /* attribute selector*/
+     [title="x"]{
+       color: rgb(205, 50, 128);
+   }
+   /*chld of div*/
+   div>p{color: red;}
+
+   /* descendent*/
+   div p{color:rgb(205, 50, 128)}
+
+   /*siblings*/
+   div~p{color:skyblue}
+
+   /*nearest sibling */
+   div +p {color:tan}
+
+   /*Pseudo Class Selector*/
+   div:hover{
+       background-color:blue;
+   }
+
+   /*Pseudo Element Selector*/
+   div::before{
+       content: "Content inserted before.";
+       color:red;
+   }
+   p::first-letter{
+       color:blue;
+       text-transform: uppercase;
+   }
+   div::affter{
+       content: "Content inserted after.";
+       color: blue;
+   }
+
+     /* unvisited link */
+     a:link {
+        color: #ccc;
+      }
+      /* visited link */
+      a:visited {
+        color: #095484;
+      }
+      /* mouse over link */
+      a:hover {
+        color: #8ebf42;
+      }
+      /* selected link */
+      a:active {
+        color: #800000;
+      }
+
+</style>
+</head>
+<h1 class="myclass">This is first H1</h1>
+<h1 id="myh1">This is second H1</h1>
+<h1>This is third H1</h1>
+<p class="myclass">This is the first paragraph</p>
+
+<h2>This is H2</h2>
+<h3>This is h3</h3>
+<h3 title="some">this is attribute selector</h3><div>
+    <p> child of div</p>
+</div>
+<div>Mouse Over Me</div>
+<p>Visit w3docs
+    <a href="https://www.w3docs.com/" target="_Page">website</a>.
+  </p>
+
+</html>

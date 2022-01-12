@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Forms Demo</title>
+    </head>
+<body>
+<form action="/programwheredatatobesubmitted" method="POST" target="_blank" name="form1">
+    <label for="userName">Please enter Username</label>
+    <input type="text" name="userName" placeholder="Enter your name" required/>
+    <br/>
+    <label for="age">Please enter your Age : </label>
+    <input type="number" name="age" value="25"/>
+    <br/>
+    <label for="password">Choose a password</label>
+    <input type="password" name="password">
+    <br/>
+    Gender
+    <input type="radio" name="gender" />Male
+    <input type="radio" name="gender" checked/>Female
+    <br/>
+    Hobbies
+    <input type="checkbox" name="Hobbies"/>Eat
+    <input type="checkbox" name="Hobbies"/>Sleep
+    <input type="checkbox" name="Hobbies"/>Repeat
+    <br/>
+    Choose a File
+    <input type="file"/>
+    <br/>
+    Input your comments
+    <textarea rows="5" cols="20" name="comments"></textarea>
+    Month
+    <select name="Month">
+        <option value="Oct">October</option>
+        <option value="Nov">November</option>
+        <option value="Dec">December</option>
+    </select>
+    <br/>
+    Month
+    <select name="Month" multiple>
+        <option value="Oct">October</option>
+        <option value="Nov">November</option>
+        <option value="Dec">December</option>
+    </select>
+    <input type="submit" value="Submit"/>
+    <input type="reset" value="Reset"/>
+
+
+</form>
+
+
+</body>
+
+
+</html>

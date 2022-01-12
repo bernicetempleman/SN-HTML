@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- do some research on Colspan and border styles
+        The colspan attribute defines the number of columns a table cell should span.
+        The colspan attribute can be used on the following elements: <td> and <th>
+         via   https://www.w3schools.com/TAGS/att_colspan.asp
+
+        border is an html attribute that is not supported in htlm5. 
+        Specifies the width of the border of an element. Use CSS instead
+        via https://www.w3schools.com/TAGS/ref_attributes.asp
+        https://www.w3schools.com/Css/css_table.asp
+        https://www.w3schools.com/CSSref/pr_border-style.asp
+        -->
+
+        <title>Table Page</title>
+    </head>
+    <body>
+        <h2>Table without border</h2>
+        <table>
+        <tr>
+            <th>First Name</th>
+            <th> Last Name</th>
+        </tr>
+        <tr>
+            <td>Bernice</td>
+            <td>Templeman</td>
+        </tr>
+    </table>
+
+    <br>
+    <h2>Table with border</h2>
+
+        <table border="1">
+            <tr>
+                <th>First Name</th>
+                <th> Last Name</th>
+            </tr>
+            <tr>
+                <td>Bernice</td>
+                <td>Templeman</td>
+            </tr>
+        </table>
+        <br>
+
+
+        <h2>Table with border and colspan</h2>
+ 
+        <table border="1" > 
+            <tr>
+              <th colspan="5">Monthly Savings</th>
+            </tr>
+            <tr>
+              <td>January</td>
+              <td>$100</td>
+              <td>$100</td>
+              <td>$100</td>
+              <td>$100</td>
+            </tr>
+            <tr>
+              <td>February</td>
+              <td>$100</td>
+              <td>$100</td>
+              <td>$100</td>
+              <td>$100</td>
+            </tr>
+          </table > 
+          <br>
+          <h2>Table with CSS border</h2>
+          <table style = "border: dotted;" >
+            <tr>
+              <th>Month</th>
+              <th>Savings</th>
+            </tr>
+            <tr>
+              <td>January</td>
+              <td>$400</td>
+            </tr>
+            <tr>
+              <td>February</td>
+              <td>$400</td>
+            </tr>
+            <tr>
+              <td colspan="2">Sum: $200</td>
+            </tr>
+          </table>
+    </body>
+</html>
